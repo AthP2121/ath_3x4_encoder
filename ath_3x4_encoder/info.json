@@ -1,0 +1,52 @@
+{
+  "manufacturer": "AthP",
+  "keyboard_name": "Ath_Macro_3x4",
+  "maintainer": "athp2121",
+  "development_board": "promicro",
+  "features": {
+    "bootmagic": true,
+    "encoder": true,
+
+  },
+
+  "encoder": {
+    "rotary": [
+      { "pin_a": "F6", "pin_b": "F5", "resolution": 4 }
+    ]
+  },
+
+  "matrix_pins": {
+    "direct": [
+      ["F7", "D0", "D4", "C6"], // changed from D1 to F7 for the encoder click
+      ["D7", "E6", "B4", "B5"],
+      ["B6", "B2", "B3", "B1"]
+
+    ]
+
+  },
+
+
+  "usb": {
+    "device_version": "1.0.1",
+    "pid": "0x0420",
+    "vid": "0x4150"
+  },
+  "layouts": {
+    "LAYOUT": {
+      "layout": [
+        {"matrix": [0, 0], "x": 0, "y": 0},
+        {"matrix": [0, 1], "x": 1, "y": 0},
+        {"matrix": [0, 2], "x": 2, "y": 0},
+        {"matrix": [0, 3], "x": 3, "y": 0},
+        {"matrix": [1, 0], "x": 0, "y": 1},
+        {"matrix": [1, 1], "x": 1, "y": 1},
+        {"matrix": [1, 2], "x": 2, "y": 1},
+        {"matrix": [1, 3], "x": 3, "y": 1},
+        {"matrix": [2, 0], "x": 0, "y": 2},
+        {"matrix": [2, 1], "x": 1, "y": 2},
+        {"matrix": [2, 2], "x": 2, "y": 2},
+        {"matrix": [2, 3], "x": 3, "y": 2},
+      ]
+    }
+  }
+}
